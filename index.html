@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukiran Pak Subekhan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tambahkan Animate.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+    <link
+      rel="icon"
+      href="./assets/img/logo-ukir.svg"
+      class="h-9"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./main.js"></script>
+    <!-- Tambahkan CSS untuk section-hidden -->
+    <style>
+      .section-hidden {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-main-color border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <div class="flex">
+          <img
+            src="assets/img/logo-ukir.svg"
+            class="h-10 md:h-16"
+            alt="logoukir"
+          />
+          <span
+            class="self-center text-xl md:text-2xl ml-3 font-semibold whitespace-nowrap text-white"
+            >Ukiran Pak Subekhan</span
+          >
+        </div>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm bg-white text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-semibold flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white rounded-sm md:bg-transparent hover:bg-gray-100 hover:text-main-color"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tentangkami"
+                class="block py-2 px-3 text-white rounded-sm md:bg-transparent hover:bg-gray-100 hover:text-main-color"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="#produk"
+                class="block py-2 px-3 text-white rounded-sm md:bg-transparent hover:bg-gray-100 hover:text-main-color"
+                >Produk Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="#kontak"
+                class="block py-2 px-3 text-white rounded-sm md:bg-transparent hover:bg-gray-100 hover:text-main-color"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTENT 1 -->
+    <section
+      class="w-full min-h-[60dvh] my-section section-hidden px-6 py-16 text-center flex flex-col items-center gap-y-6 justify-center"
+    >
+      <h1 class="text-3xl md:text-5xl font-extrabold font-poppins">
+        Selamat datang di Ukiran Pak Subekhan
+      </h1>
+      <p class="text-lg text-gray-500 md:text-lg max-w-3xl mx-auto">
+        Di Ukiran Pak Subekhan, setiap ukiran adalah lebih dari sekadar
+        hiasan,ini adalah warisan seni yang memadukan keterampilan tangan dengan
+        keindahan motif oriental. Dari guratan yang gagah dan anggun, setiap
+        karya diciptakan untuk menghadirkan kehangatan, keindahan, dan cerita di
+        setiap sudut rumah Anda. Temukan karya terbaik, dan bawa pulang sentuhan
+        seni yang abadi.
+      </p>
+      <a
+        href="https://wa.me/6285225720138"
+        class="text-white w-max bg-[#6F1D1B] border border-[#6F1D1B] hover:border-[#6F1D1B] hover:border hover:bg-transparent hover:text-[#6F1D1B] font-medium rounded-lg text-sm px-8 py-3 text-center transition-colors duration-300 scr"
+      >
+        Pesan Sekarang
+      </a>
+    </section>
+    <!-- CONTENT 2 -->
+    <section
+      id="tentangkami"
+      class="w-full my-section section-hidden mx-auto px-1 pr-2 bg-[#B06630] md:px-10 py-10 md:pr-20 flex flex-col justify-center items-center md:flex-row"
+    >
+      <div class="px-3 order-2 w-full md:p-1 md:w-[60%] text-white">
+        <h1 class="text-4xl text-center md:text-left font-bold">
+          TENTANG KAMI
+        </h1>
+        <p class="mt-2 text-base text-justify md:text-left text-gray-300">
+          Kisah kami berawal dari dedikasi dan keahlian Bapak Subekhan. Jauh
+          sebelum mendirikan sanggar sendiri, beliau mengawali perjalanannya
+          dengan mengabdi dan mengasah keterampilan di sebuah toko mebel yang
+          berspesialisasi pada ukiran motif Cina. Di sanalah kecintaannya pada
+          detail dan keindahan ukiran Oriental tumbuh mendalam. Berbekal
+          pengalaman dan impian untuk berkarya secara mandiri, pada tahun 2009,
+          Bapak Subekhan memberanikan diri untuk berdiri di atas kaki sendiri.
+          Dari sebuah ruang sederhana di rumahnya yang beralamat di Dukuh Nganti
+          Rt 02 Rw 01, Desa Karangampel, Kecamatan Kaliwungu, Kabupaten Kudus.
+          Hingga hari ini, kami tetap setia pada resep warisan yang sama
+          memadukan kayu berkualitas tinggi dengan ketelitian pahatan tangan,
+          menjaga setiap corak dan makna otentik dari ukiran khas Tiongkok.
+          Setiap karya yang kami hasilkan bukan hanya sebuah produk, tapi bukti
+          perjalanan panjang, keahlian, dan kecintaan pada seni ukir.
+        </p>
+      </div>
+      <img
+        src="assets/img/icon-welcome.svg"
+        class="w-full md:w-[40%] h-[250px] order-1"
+        alt="img-welcome"
+      />
+    </section>
+    <!-- KEUNGGULAN KAMI -->
+    <h1 class="text-3xl md:text-4xl font-extrabold text-center my-5">
+      KEUNGGULAN <span class="text-main-color">KAMI</span>
+    </h1>
+    <section
+      class="w-full my-section section-hidden md:w-4/5 mx-auto flex text-justify flex-col p-5 gap-x-4 gap-y-6 md:flex-row"
+    >
+      <div class="flex md:w-1/2 gap-4 items-center">
+        <img src="assets/img/Wood.svg" class="h-32" alt="friendly" />
+        <div class="">
+          <h1 class="text-xl font-bold">Material Pilihan</h1>
+          <p>
+            Kami menggunakan kayu solid premium (seperti Jati) yang menjamin
+            kekuatan. Setiap detail dipahat manual oleh pengrajin ahli untuk
+            menghasilkan karya seni yang otentik.
+          </p>
+        </div>
+      </div>
+      <div class="flex md:w-1/2 gap-4 items-center">
+        <img src="assets/img/carving.png" class="h-32" alt="design" />
+        <div class="">
+          <h1 class="text-xl font-bold">Desain Kustom & Ragam Motif</h1>
+          <p>
+            Mulai dari motif tradisional cina klasik hingga gaya modern. Kami
+            siap mewujudkan ide dan pesanan ukiran sesuai keinginan Anda untuk
+            berbagai kebutuhan.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full my-section section-hidden md:w-4/5 mx-auto flex flex-col p-5 gap-x-3 gap-y-6 md:flex-row"
+    >
+      <div class="flex md:w-1/2 gap-4 items-center">
+        <img src="assets/img/icon-rupiah.png" class="h-32" alt="rupiah" />
+        <div>
+          <h1 class="text-xl font-bold">Harga Terjangkau</h1>
+          <p>
+            Kami percaya produk lokal bisa bersaing—baik dari segi harga,
+            tampilan, maupun kualitas terbang.
+          </p>
+        </div>
+      </div>
+      <div class="flex md:w-1/2 gap-4 items-center">
+        <img
+          src="assets/img/icon-profesional.svg"
+          class="h-32"
+          alt="icon-profesional"
+        />
+        <div>
+          <h1 class="text-xl font-bold">Pengrajin Berpengalaman</h1>
+          <p>
+            Dibuat dengan tangan oleh pengrajin berpengalaman sejak 2009,
+            menggunakan bahan alami dan teknik turun-temurun.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- PRODUK KAMI -->
+
+    <!--  -->
+    <div class="container pb-10 mx-auto flex flex-col items-center gap-2">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-5">
+        HASIL KARYA <span class="text-main-color">KAMI</span>
+      </h1>
+      <p class="text-center w-3/4 mx-auto">
+        Tertarik untuk memiliki karya ukir otentik dengan sentuhan motif Cina
+        yang khas? Kami siap membantu mewujudkan furnitur atau hiasan impian
+        Anda. Proses pemesanan di tempat kami dirancang untuk menjadi pengalaman
+        yang personal dan memuaskan
+      </p>
+      <a
+        href="https://wa.me/6285225720138"
+        class="text-white w-max bg-[#6F1D1B] border border-[#6F1D1B] hover:border-[#6F1D1B] hover:border hover:bg-transparent hover:text-[#6F1D1B] font-medium rounded-lg text-sm px-8 py-3 text-center transition-colors duration-300 scr"
+      >
+        Pesan Sekarang
+      </a>
+    </div>
+    <section id="produk" class="w-full my-section section-hidden py-7 px-4">
+      <div id="gallery" class="relative w-full my-2" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="assets/img/gallery-1.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+              src="assets/img/gallery-2.jpg"
+              class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="assets/img/gallery-3.jpg"
+              class="absolute block max-w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="assets/img/gallery-4.jpg"
+              class="absolute block w-fit h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-main-color group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-main-color group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <!-- CONTENT 4 -->
+    <footer
+      id="kontak"
+      class="w-full flex flex-col gap-5 md:flex-row justify-between bg-main-color py-12 px-12"
+    >
+      <div class="">
+        <div class="flex gap-x-2">
+          <img src="assets/img/logo-ukir.svg" alt="" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-zinc-300"
+            >Ukiran Pak Subekhan</span
+          >
+        </div>
+        <p class="font-semibold text-zinc-300">
+          Hadirkan keindahan ukiran kayu di rumah Anda, dan ciptakan suasana
+          hangat penuh makna .
+        </p>
+      </div>
+      <div class="font-semibold text-zinc-300">
+        <ul class="">
+          <li class="mb-2"><a href="#">Home</a></li>
+          <li class="mb-2"><a href="#tentangkami">Tentang Kami</a></li>
+          <li class="mb-2"><a href="#produk">Produk Kami</a></li>
+          <li class="mb-2"><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <ul>
+          <li class="font-extrabold mb-2 text-zinc-300">Kontak Kami</li>
+          <!-- <li>
+            <i class="fa-solid fa-envelope mb-2 text-zinc-300"></i>
+            <span class="font-medium text-zinc-300">
+              kispriyanto646@gmail.com</span
+            >
+          </li> -->
+          <li>
+            <i class="fa-solid fa-phone mb-2 text-zinc-300"></i>
+            <a
+              class="font-medium text-zinc-300 hover:underline"
+              href="https://wa.me/6285225720138"
+              >085225720138</a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-facebook mb-2 text-zinc-300"></i>
+            <a
+              class="font-medium text-zinc-300 hover:underline"
+              href="https://www.facebook.com/bekan.bekan.9469"
+              >Bekan Bekan</a
+            >
+          </li>
+          <!-- <li>
+            <i class="fa-brands fa-instagram mb-2 text-zinc-300"></i>
+            <a
+              href="https://www.instagram.com/pakkeslayanglayang"
+              class="font-medium text-zinc-300 hover:underline"
+            >
+              Ukiran Kayu Pak Subekhan</a
+            >
+          </li> -->
+          <li>
+            <i class="fa-solid fa-copyright mb-2 text-zinc-300"></i>
+            <span class="font-medium text-zinc-300"> Copyright 2025</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- JavaScript yang diperbaiki -->
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add(
+                'animate__animated',
+                'animate__fadeInUp'
+              );
+              observer.unobserve(entry.target); // Animasi hanya berjalan sekali
+            }
+          });
+        },
+        {
+          threshold: 0.2, // Animasi mulai saat 20% section terlihat
+        }
+      );
+
+      document.querySelectorAll('.my-section').forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
